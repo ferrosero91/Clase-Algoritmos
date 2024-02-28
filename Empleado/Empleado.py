@@ -1,3 +1,7 @@
+from Fecha import Fecha
+
+
+
 class Empleado:
     #Atributos
     nombre = ""
@@ -46,8 +50,14 @@ class Empleado:
         #Asignacion numero 2
         self.salario *= 2
 
-    def SalarioAnual (self):
-        self.salario *12
+    def CalcularSalarioAnual (self):
+        #metodo 1
+        salarioAnual = self.salario*12
+        return salarioAnual
+        #metodo 2
+        #return self.salario*12
+
+
 
     
 
