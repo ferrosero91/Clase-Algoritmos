@@ -1,7 +1,5 @@
 from Fecha import Fecha
 
-
-
 class Empleado:
     #Atributos
     nombre = ""
@@ -11,6 +9,12 @@ class Empleado:
     -----------------------------------'''
     sexo = 0
     salario = 0
+    '''---------------------------------------------
+    #Asociaciones
+    ----------------------------------------'''
+
+    fechaNacimiento=Fecha()
+    fechaIngreso=Fecha()
 
           #metodos
     def CambiarSalario (self, nuevoSalario):
@@ -56,6 +60,23 @@ class Empleado:
         return salarioAnual
         #metodo 2
         #return self.salario*12
+    
+
+    def ConsultarDiaCumpleaños(self):
+        return "El dia de su cumpleaños es: " + self.fechaNacimiento.ConsultarDia()
+    
+    def CalcularImpuesto(self):
+    #Forma 1
+     total=self.CalcularSalarioAnual()
+     return total * 19.5/100
+
+     #forma 2
+    # return self.CalcularSalarioAnual()*0.195
+      
+    
+
+    
+
 
 
 
