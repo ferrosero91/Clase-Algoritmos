@@ -6,5 +6,6 @@ class CuentaCorriente:
 def ConsultarSaldoC(self):
     return self.saldo
 
-def consignar(self, monto):
+def Consignar(self, monto):
     return self.saldo + monto
+
