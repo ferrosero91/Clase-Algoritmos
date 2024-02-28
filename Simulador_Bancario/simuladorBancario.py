@@ -19,18 +19,23 @@ cdt=CDT()
 #METODOS
 #consignar cuenta corriente
 #calcular saldo total
-#Pasar de ahorro a corriente
+#Pasar todo el saldo de ahorro a corriente
     
 def ConsignarCuentaCorriente(self, monto):
 
     return self.corriente.Consignar(monto)
 
+def ConsignarCuentaAhorros(self, monto):
+    return self.ahorros.Consignar(monto)
+
 def CalcularSaldoTotal():
 
     return "Su saldo total es "+ (self.ahorros.saldo + self.corriente.saldo)
 
-def PasarAhorroCorriente():
-    return 0 
+def PasarAhorroCorriente(self, saldo):
+    return "vamos a pasar ahorros a corriente" +self.ahorros.saldo()
+
+   
 
 
 
