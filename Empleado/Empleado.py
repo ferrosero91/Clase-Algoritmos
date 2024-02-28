@@ -38,6 +38,19 @@ class Empleado:
         nsalario =nSalario + self.salario
         self.salario = nsalario
         return "el nuevo salario es de: " + self.salario
+    
+    def DuplicarSalario(self):
+        #aqui va el codigo 
+        # asignacion forma 1
+        #self.salario = self.salario * 2
+        #Asignacion numero 2
+        self.salario *= 2
+
+    def SalarioAnual (self):
+        self.salario *12
+
+    
+
 
 
 
