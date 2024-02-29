@@ -20,6 +20,9 @@ cdt=CDT()
 #consignar cuenta corriente
 #calcular saldo total
 #Pasar todo el saldo de ahorro a corriente
+#Consultar saldo corriente
+#retirar todo
+#duplicar ahorro
 
 '''
 
@@ -58,8 +61,6 @@ def DuplicarAhorroAhorros (self):
 
 
 
-#Consultar saldo corriente
-#retirar todo
-#duplicar ahorro
+
 
 
