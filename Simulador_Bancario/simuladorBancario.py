@@ -48,7 +48,13 @@ def transferir_a_corriente(self):
         self.ConsignarCuentaCorriente(monto_a_transferir)
         return self.SaldoCorriente()
 
-   
+ #METODO PARA DUPLICAR AHORROS
+
+def DuplicarAhorroCorriente (self):
+    self.SaldoCorriente *=2  
+
+def DuplicarAhorroAhorros (self):
+    self.SaldoAhorros *=2  
 
 
 
