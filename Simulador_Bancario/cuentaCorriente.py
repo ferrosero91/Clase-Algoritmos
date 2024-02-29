@@ -3,9 +3,9 @@ class CuentaCorriente:
     #atributos
     saldo = 0
 
-def ConsultarSaldoC(self):
+def ConsultarSaldoCorriente(self):
     return self.saldo
 
-def Consignar(self, monto):
+def ConsignarCorriente(self, monto):
     return self.saldo + monto
 

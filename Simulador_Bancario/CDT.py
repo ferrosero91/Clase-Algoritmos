@@ -4,3 +4,6 @@ class CDT:
     valorInversion = 0
     InteresMensual = 0
     mesApertura = 0
+
+
+    

@@ -9,7 +9,11 @@ class CuentaAhorros:
 #metodos
 
 -------------------------------------------------'''
-def Consignar (self, monto):
+def ConsultarSaldoAhorros(self):
+    return self.saldo
+
+
+def ConsignarAhorros(self, monto):
     self.saldo = self.saldo + monto
     return "Valor consignado correctamente, Su nuevo saldo es" + self.saldo
 
