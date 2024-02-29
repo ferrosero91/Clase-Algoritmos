@@ -6,4 +6,5 @@ class CDT:
     mesApertura = 0
 
 
-    
+def ConsutarInteresMensual(self):
+    return self.InteresMensual
