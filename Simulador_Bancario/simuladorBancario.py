@@ -15,11 +15,13 @@ corriente=CuentaCorriente()
 ahorros=CuentaAhorros()
 cdt=CDT()
 
-
+'''
 #METODOS
 #consignar cuenta corriente
 #calcular saldo total
 #Pasar todo el saldo de ahorro a corriente
+
+'''
 
 #METODOS PARA CONSIGNAR   
 def ConsignarCuentaCorriente(self, monto):
