@@ -32,8 +32,10 @@ def CalcularSaldoTotal():
 
     return "Su saldo total es "+ (self.ahorros.saldo + self.corriente.saldo)
 
-def PasarAhorroCorriente(self, saldo):
-    return "vamos a pasar ahorros a corriente" +self.ahorros.saldo()
+def transferir_a_corriente(self):
+        monto_a_transferir = self.ahorros.saldo()
+        self.ConsignarCuentaCorriente(monto_a_transferir)
+        return self.corriente.saldo()
 
    
 
