@@ -1,13 +1,12 @@
-#Este es el codigo de la clase fecha
 class Fecha:
-    '''------------------------------------
-    #atributos
-    ------------------------------------'''
+    #Aqui va todo el codigo de fecha
+    '''----------------------------------------------------------------
+    # Atributos
+    ----------------------------------------------------------------'''
     dia = 0
     mes = 0
     anio = 0
-
-#Metodos
+    
     def ConsultarDia(self):
         return self.dia
     
