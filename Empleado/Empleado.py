@@ -1,7 +1,8 @@
 from Fecha import Fecha
 
 class Empleado:
-    #Aqui va el codigo del empleado
+    
+        #Aqui va el codigo del empleado
     '''----------------------------------------------------------------
     # Atributos
     ----------------------------------------------------------------'''
@@ -12,6 +13,7 @@ class Empleado:
     ----------------------------------------------------------------'''
     sexo=0
     salario = 0
+    numero_hijos_empleado = 0
     
     '''----------------------------------------------------------------
     # Asociaciones
@@ -90,3 +92,20 @@ class Empleado:
         return (total * 19.5) / 100 
         #forma 2
         #return self.CalcularSalarioAnual() * 0.195
+        
+    def ConsultarNumeroHijosEmpleados(self):
+        return "El empleado tiene:" + self.numero_hijos_empleado + "hijos"
+    
+    def CalcularAuxilioEducativo(self):
+        auxilioEducativo = 0.05 * self.salario * self.numero_hijos_empleado
+        return "El auxilio educativo es" + auxilioEducativo
+    
+    def CalcularAuxilioEducativo(self, porcentaje):
+        auxilioEducativo = porcentaje * self.salario * self.numero_hijos_empleado
+        return "El auxilio educativo es:" + auxilioEducativo
+    
+    def CalcularDiferenciaSalarial(self, otro_empleado):
+        diferenciaSalarial = self.salario - otro_empleado.salario
+        return "La diferencia salarial es:" + diferenciaSalarial
+    
+    
