@@ -25,11 +25,12 @@ class Empleado:
     # Metodos
     ----------------------------------------------------------------'''
     
-    def __init__(self, nombre, apellido, sexo, salario):
+    def __init__(self, nombre, apellido, sexo, salario, numero_hijos_empleado):
         self.nombre = nombre
         self.apellido =apellido
         self.sexo = sexo
         self.salario = salario
+        self.numero_hijos_empleado = numero_hijos_empleado
     
     def CambiarSalario(self, nuevoSalario):
         # Aqui va el codigo del metodo

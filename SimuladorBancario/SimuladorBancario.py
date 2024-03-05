@@ -4,9 +4,10 @@ from CDT import CDT
 
 class SimuladorBancario:
     
-    cedula=''
-    nombres=''
-    mesActual=''
+    cedula= ""
+    nombres= ""
+    mesActual= ""
+    tipoCliente="" # tipos de clientes 1=normal 2=platino 3=VIP
     
     '''----------------------------------------------------------------
     # Asociaciones
@@ -19,6 +20,15 @@ class SimuladorBancario:
     '''----------------------------------------------------------------
     # Metodos
     ----------------------------------------------------------------'''
+    
+    def __init__(self, cedula, nombres, mesActual, tipoCliente):
+        self.cedula = cedula
+        self.nombres = nombres
+        self.mesActual = mesActual
+        self.tipoCliente = tipoCliente
+        
+    def cambiarTipoCliente(self, ntipoCliente):
+        self.tipoCliente = ntipoCliente
     
     def ConsignarCuentaCorriente(self, monto):
         self.corriente.ConsignarMonto(monto)
