@@ -10,6 +10,7 @@ class Triangulo:
   punto1=Punto()
   punto2=Punto()
   punto3=Punto()
+  
 
    
 
